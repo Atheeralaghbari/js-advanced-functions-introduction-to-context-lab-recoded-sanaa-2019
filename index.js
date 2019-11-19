@@ -75,7 +75,7 @@ const allWagesFor = function (obj) {
 
 
 const findEmployeeByFirstName =function(srcArray,firstName){
-return srcArray.find(e=>e.firstName == firstName});
+return srcArray.find(e=>e.firstName == firstName);
 }
 
 
