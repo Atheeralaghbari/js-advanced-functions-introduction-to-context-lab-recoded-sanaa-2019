@@ -76,7 +76,7 @@ return srcArray.find(e=>e.firstName == firstName);
 
 
 const calculatePayroll=function(srcArray){
-return srcArray.reduce((memo,d)=>memo+allWagesFor(d),0);
+return srcArray.reduce((memo,d)=>memo+allWagesFor(d));
 }
 
 
