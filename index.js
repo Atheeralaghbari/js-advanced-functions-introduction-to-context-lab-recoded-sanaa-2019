@@ -64,7 +64,7 @@ const wagesEarnedOnDate=function(obj,date){
 
 const allWagesFor = function (obj) {
     let newArr = obj.timeInEvents.map(e=>e.date);
-    let payable = newArr.reduce((memo, d)=>memo + wagesEarnedOnDate(obj,d),0);
+    let payable = newArr.reduce((memo,d)=>memo + wagesEarnedOnDate(obj,d),0);
     return payable
 }
 
