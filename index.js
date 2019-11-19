@@ -67,9 +67,7 @@ const allWagesFor = function (obj) {
         return e.date
     })
 
-    let payable = newArr.reduce(function (memo, d) {
-        return memo + wagesEarnedOnDate(obj,d)
-    }, 0);
+    let payable = newArr.reduce((memo, d)=>memo + wagesEarnedOnDate(obj,d));
     return payable
 }
 
