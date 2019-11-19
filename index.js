@@ -48,8 +48,8 @@ const createTimeOutEvent=function(obj,datestamp){
 
 
 const hoursWorkedOnDate=function(obj,workHour){
-    let hourIn=obj['timeInEvents'].find(e=>e.date==workHour);
-    let hourOut=obj['timeOutEvents'].find(e=>e.date==workHour);
+    let hourIn=obj.timeInEvents.find(e=>e.date==workHour);
+    let hourOut=obj.timeOutEvents.find(e=>e.date==workHour);
     let hourWorked=(hourOut.hour-hourIn.hour)/100;
     return hourWorked;
 }
